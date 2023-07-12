@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  </head>
+  <body>
+    <h1 id="inicio">
+      Módulo 1 - Primeiros Passos com
+      <abrr title="HyperText Markup Language">HTML</abrr>
+    </h1>
+    <hr />
+
+    <h2>Índice</h2>
+    <ul>
+      <li>
+        <a href="#clients">O que são <i>Clients</i>?</a>
+      </li>
+      <li>
+        <a href="#servers">O que são <i>Servers</i>?</a>
+      </li>
+      <li><a href="#estrutura">Como é uma estrutura básica de um HTML?</a></li>
+      <li>
+        <a href="#listas"
+          >Entendendo a diferença entre listas ordenadas e não ordenadas</a
+        >
+      </li>
+      <li><a href="#referencias">Links de referências</a></li>
+    </ul>
+
+    <h2 id="clients">O que são <i>Clients</i>?</h2>
+    <a href="#inicio"><small>Voltar</small></a>
+    <p>
+      O <i>client</i> é o usuário<sup>*</sup> que envia uma requisição ao servidor.
+      <blockquote>O cliente mais conhecido é o <mark>navegador.</mark></blockquote>
+      Quando a requisição é feita por um navegador, ela é enviada por meio da internet. É aguardada uma resposta do servidor, e a comunicação é encerrada.<br/>
+      <sub>* Neste caso, um usuário web.</sub>
+    </p>
+
+    <h2 id="servers">O que são <i>Servers</i>?</h2>
+    <a href="#inicio"><small>Voltar</small></a>
+    <p>
+      O <i>server</i> executa as requisições e as devolve para o <i>client</i>. Nele, pode-se armazenar documentos, imagens, áudio, vídeo, etc.<br/>
+      Também existem servidores que armazenam programas para processar as requisições. Esse tipo de servidor é chamado de servidor web, ou <i>web server</i>.
+      Ele executa linguagens como PHP, Javascript, Java e C#.
+      <h3>Servidor DNS</h3>
+      Também existem os servidores DNS, ou <i>Domain Name System</i>. Eles fazem a tradução do nome da URL, por exemplo <strong>dio.me</strong>, para seu respectivo endereço IP.
+      <blockquote>A sua função não é hospedar sites ou aplicações que criamos, mas sim permitir que as requisições cheguem aos locais corretos.</blockquote>
+    </p>
+
+    <h2 id="estrutura">Como é uma estrutura básica de um HTML?</h2>
+    <a href="#inicio"><small>Voltar</small></a>
+    <p>
+      <h4>&lt;!DOCTYPE html&gt;</h4>
+      Um documento HTML é formado inicialmente pela declaração <strong>&lt;!DOCTYPE html&gt;</strong>, 
+      ela indica ao navegador o tipo de documento esperado.
+      <h4>&lt;html&gt;</h4>
+      Então, deve-se utilizar a tag <strong>&lt;html&gt;</strong>, pois ela conterá todos os outros elementos HTML. 
+      Nela, é importante informar o atributo <u>lang</u>, que indicará o idioma da página.
+      <h4>&lt;head&gt;</h4>
+      A seguir, utiliza-se a tag <strong>&lt;head&gt;</strong>, que contém a metadata sobre o site, e seu conteúdo não é visível ao usuário. 
+      <h4>&lt;title&gt;</h4>
+      Uma tag necessária em todo documento HTML, dentro da <strong>&lt;head&gt;</strong>, é a <strong>&lt;title&gt;</strong>, ela define o título da página.
+      <h4>&lt;body&gt;</h4>
+      Por fim, há a tag <strong>&lt;body&gt;</strong>, onde é definido todo o corpo do site e seus elementos.
+      <h5>Essa é a estrutura mais básica de um documento HTML:<br /></h5>
+      <p>
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html&gt;<br />
+        &lt;head&gt;<br />
+        &nbsp; &lt;title&gt;Título da página&lt;/title&gt;<br />
+        &lt;/head&gt;<br />
+        &lt;body&gt;<br />
+        &nbsp; &nbsp;O conteúdo do documento...<br />
+        &lt;/body&gt;<br />
+        &lt;/html&gt;
+      </p>
+    </p>
+
+    <h2 id="listas">
+      Entendendo a diferença entre listas ordenadas e não ordenadas
+    </h2>
+    <a href="#inicio"><small>Voltar</small></a>
+    <p>
+      No HTML existem listas ordenadas (com sequência númerica ou alfabética) e não ordenadas (cada item é indicado por um símbolo).<br/>
+      Na lista ordenada utiliza-se a tag <strong>&lt;ol&gt;</strong>, e cada item dentro dela é determinado pela tag <strong>&lt;li&gt;</strong>.
+      Sem informar nenhum atributo, a lista será numerada a partir de 1, 2, 3..., como no exemplo:
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+      Porém, é possível fazer algumas mudanças. A tag <strong>&lt;ol&gt;</strong> aceita três atributos: <u>reversed</u>, especifica que a ordenação deve ser reversa (ex.: 9, 8, 7...);
+      <u>start</u>, indica um valor para iniciar a lista; e <u>type</u>, demonstra o tipo de marcador para a lista.<br/><br/>
+      Já na lista não ordenada, deve-se utilizar a tag <strong>&lt;ul&gt;</strong> e cada item dentro dela também é determinado pela tag <strong>&lt;li&gt;</strong>.<br />
+      Exemplo.:
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+      Nesse caso, a customização deve ser feita via <abrr title="Cascading Style Sheets">CSS</abrr>.<br/>
+      Também é possível criar listas dentro de listas.
+    </p>
+
+    <h2 id="referencias">Links de referências</h2>
+    <a href="#inicio"><small>Voltar</small></a>
+    <ul>
+      <li>
+        <a href="https://www.alura.com.br/artigos/dns-o-que-e-qual-escolher?" title="https://www.alura.com.br/artigos/dns-o-que-e-qual-escolher" target="_blank">Alura</a>
+      </li>
+      <li>
+        <a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215" title="https://www.devmedia.com.br/http-cliente-e-servidor" target="_blank">DevMedia</a>
+      </li>
+      <li>
+        <a href="http://dio.me" title="http://dio.me" target="_blank">Dio.me</a>
+      </li>
+      <li>
+        <a href="http://w3c.org" title="http://w3c.org" target="_blank">W3C.org</a>
+      </li>
+    </ul>
+  </body>
+</html>
